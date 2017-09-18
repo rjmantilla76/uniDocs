@@ -1,0 +1,31 @@
+[
+  {
+    "username": "Juan",
+    "course": "Anadec",
+    "post": "Libro Finanzas",
+    "price": "30000",
+    "contact": "juanzz66@gmail.com"
+  },
+  {
+    "username": "Ivan",
+    "course": "Web",
+    "post": "Libro Javascript for dummies",
+    "price": "50000",
+    "contact": "duartiv@gmail.com"
+  },
+  {
+    "username": "Andres",
+    "course": "Apo 1",
+    "post": "Presentacion Atributos",
+    "price": "0",
+    "contact": "andresrz4@hotmail.com"
+  },
+  {
+    "username": "Ivan",
+    "course": "Estructuras de Datos",
+    "post": "PDF Arboles",
+    "price": "0",
+    "contact": "duartiv@gmail.com"
+  }
+
+]
