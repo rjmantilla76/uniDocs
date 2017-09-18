@@ -19,7 +19,7 @@ class AddPost extends Component {
   }
 
   addPost() {
-    axios.post('/addPost', this.state.item)
+    axios.post('/addPost', this.state.post)
     .then(response => {
       this.clearAddPostFields();
     })
@@ -47,11 +47,11 @@ class AddPost extends Component {
           <tbody>
             <tr>
               <td> Nombre </td>
-              <td> <input type="text" value={this.state.post.username} onChange={(event) => { this.setState({item: update(this.state.post, {username: {$set: event.target.value}})}) }} /> </td>
+              <td> <input type="text" value={this.state.post.username} onChange={(event) => { this.setState({post: update(this.state.post, {username: {$set: event.target.value}})}) }} /> </td>
             </tr>
             <tr>
               <td> Materia </td>
-              <td> <input type="text" value={this.state.post.course} onChange={(event) => { this.setState({course: update(this.state.post, {course: {$set: event.target.value}})}) }} /> </td>
+              <td> <input type="text" value={this.state.post.course} onChange={(event) => { this.setState({post: update(this.state.post, {course: {$set: event.target.value}})}) }} /> </td>
             </tr>
             <tr>
               <td> Descripción </td>
@@ -59,11 +59,11 @@ class AddPost extends Component {
             </tr>
             <tr>
               <td> Precio </td>
-              <td> <input type="text" value={this.state.post.price} onChange={(event) => { this.setState({price: update(this.state.post, {price: {$set: event.target.value}})}) }} /> </td>
+              <td> <input type="text" value={this.state.post.price} onChange={(event) => { this.setState({post: update(this.state.post, {price: {$set: event.target.value}})}) }} /> </td>
             </tr>
             <tr>
               <td> Info Contacto </td>
-              <td> <input type="text" value={this.state.post.contact} onChange={(event) => { this.setState({contact: update(this.state.post, {contact: {$set: event.target.value}})}) }} /> </td>
+              <td> <input type="text" value={this.state.post.contact} onChange={(event) => { this.setState({post: update(this.state.post, {contact: {$set: event.target.value}})}) }} /> </td>
             </tr>
           </tbody>
         </table>
