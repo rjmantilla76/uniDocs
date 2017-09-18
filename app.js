@@ -9,8 +9,9 @@ var index = require('./routes/index');
 
 var mongo = require('mongodb');
 var monk = require('monk');
-//var db = monk(process.env.MONGOLAB_URI);
-var db = monk('admin:unidocs17@ds139984.mlab.com:39984/heroku_rdsfgtdx');
+var db = monk(process.env.MONGOLAB_URI);
+
+
 
 var app = express();
 
