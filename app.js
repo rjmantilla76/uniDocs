@@ -9,7 +9,7 @@ var index = require('./routes/index');
 
 var mongo = require('mongodb');
 var monk = require('monk');
-var db = monk('localhost:27017/node_unidocs');
+var db = monk(process.env.MONGOLAB_URI);
 
 
 var app = express();
