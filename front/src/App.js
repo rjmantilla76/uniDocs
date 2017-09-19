@@ -14,7 +14,8 @@ class App extends Component {
       search: ""
     };
   }
-
+  //Sería bueno sacar lo que está adentro para volverlo a llamar cuando alguien ingrese un post
+  //En este momento no se actualiza la lista una vez un usuario añade unpost
   componentDidMount() {
     fetch("/getposts", {method:"GET",
       headers:{accept:"application/json"}})
