@@ -19,10 +19,13 @@ class AddPost extends Component {
   }
 
   addPost() {
+    //Sería bueno añadir algún tipo de validación (casillas no nulas, precio es un número, etc.)
     axios.post('/addPost', this.state.post)
     .then(response => {
       this.clearAddPostFields();
     })
+    //No es claro para un usuario si añadió exitosamente su post
+    //Sería bueno meter un .then (()=> {alert();}) por lo menos
   }
 
   clearAddPostFields() {
