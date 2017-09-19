@@ -6,8 +6,6 @@ export default class SearchBox extends Component {
   }
 
   onEnter(evt) {
-    console.log(evt.target.value);
-
     this.props.search(evt.target.value);
   }
 
