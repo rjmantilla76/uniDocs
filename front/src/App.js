@@ -43,7 +43,7 @@ class App extends Component {
         <SearchBox search={this.search.bind(this)}/>
       </div>
       <PostList posts={this.state.posts.filter((t) => {
-        return t.course.startsWith(this.state.search);
+        return t.course.toLowerCase().startsWith(this.state.search.toLowerCase());
       }) }/>
       <AddPost />
     </div>);
